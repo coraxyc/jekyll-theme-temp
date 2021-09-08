@@ -10,7 +10,7 @@ previous line, unless you add a <br>
 `<br>` 
 
 - bullet point 1
-- bullet point 2
+- bullet point 2 hi
 - bullet point 3
 
 * cookies
