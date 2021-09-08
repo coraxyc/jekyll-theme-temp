@@ -6,6 +6,11 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
+
+dependencies: 
+  pre: 
+    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest

@@ -6,6 +6,10 @@ on:
     # paths:
     # - "website/**"
 
+dependencies: 
+  pre: 
+    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
