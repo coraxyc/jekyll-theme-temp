@@ -6,13 +6,6 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
-
-run:
-    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
-
-compile:
-  override:
-    - bundle exec jekyll build --verbose
     
 test:
   override:
@@ -23,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
       - run: bundle exec jekyll serve --watch
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
