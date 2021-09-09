@@ -22,3 +22,4 @@ theme: my-theme
 
 plugins:
   - jekyll-remote-theme
+remote_theme: coraxyc/jekyll-theme-temp
