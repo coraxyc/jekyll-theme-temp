@@ -1,10 +1,6 @@
 name: Deploy to Preview Channel
 
-on:
-  pull_request:
-    # Optionally configure to run only for specific files. For example:
-    # paths:
-    - "*.md"
+on: pull_request
 
 run:
     - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
