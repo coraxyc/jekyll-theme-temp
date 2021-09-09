@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "_site",
+    "public": "my-theme/_site",
     "ignore": [
       "firebase.json",
       "**/.*",
