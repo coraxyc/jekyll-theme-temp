@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler
-      - run: bundle exec jekyll serve --watch
+      - run: echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc - gem install bundler - bundle exec jekyll serve --watch
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
