@@ -1,4 +1,4 @@
-title: Your awesome title
+title: Your awesome title 2
 author:
   name: GitHub User
   email: your-email@domain.com
@@ -19,9 +19,5 @@ my-theme:
 
 # Build settings
 theme: my-theme
-
-plugins:
-  - jekyll-remote-theme
-remote_theme: coraxyc/jekyll-theme-temp
 
 baseurl: /jekyll-theme-temp
